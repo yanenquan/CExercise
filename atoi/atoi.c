@@ -9,18 +9,18 @@ int atoi(const char *s)
 	{
 		if((c >= '0') && (c <= '9'))
 		{
-			  result = result*10 + (c - '0');
+			result = result*10 + (c - '0');
 		}
 		else
-			  return -1;                     //Invalid   string
+			return -1; //Invalid   string
 	}
-	return   i;
-	} 
+	return result;
+} 
 
 
 int main()
 {
-	char str1 = "1234";
-	printf("%d\n",atoi(str1);
+	char *str1 = "1234";
+	printf("%d\n",atoi(str1));
 	return 0;
 } 
