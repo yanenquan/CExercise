@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 void * my_memcpy(void *dst,const void *src,unsigned int count)
 {
@@ -42,7 +43,7 @@ char *my_strcpy(char *dst,const char *src)
 int main()
 {
 	char dest[10] = "";
-	char src = "hello";
-	printf("%s\n",my_strcpy(dest,src);
+	char *src = "hello";
+	printf("%s\n",my_strcpy(dest,src));
 	return 0;
 }
