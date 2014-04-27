@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 int my_strcmp(const char *str1, const char *str2)
 {
@@ -14,11 +15,10 @@ int my_strcmp(const char *str1, const char *str2)
    
 }
 
-
 int main()
 {
-	char str1 = "hellojava";
-	char str2 = "hello";
-	printf("%d\n",my_strcmp(str1,str2);
+	char* str1 = "hellojava";
+	char* str2 = "hello";
+	printf("%d\n",my_strcmp(str1,str2));
 	return 0;
 } 
