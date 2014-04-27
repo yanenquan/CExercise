@@ -50,6 +50,7 @@ int main()
     int N = 3;
     cout<<"permute:"<<endl;
     permute(p,0,N-1);
+	
     cout<<"combine:"<<endl;
     bool b[3];
     combine(p,b,0,N-1);
