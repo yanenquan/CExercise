@@ -1,3 +1,11 @@
+/******************************************************************************
+*  author: yanenquan
+*  version: 1.0
+*  description: STL vector 操作
+*  date: 2014-04-23
+*  other: 无
+******************************************************************************/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
