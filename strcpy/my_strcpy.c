@@ -1,3 +1,11 @@
+/******************************************************************************
+*  author: yanenquan
+*  version: 1.0
+*  description: 字符串拷贝
+*  date: 2014-03-16
+*  other: 1. NULL检查 2.const使用 
+*  		  3.带返回值以实现链式操作 4.源和目标地址重叠是否需要处理
+******************************************************************************/
 #include <stdio.h>
 #include <assert.h>
 
@@ -34,7 +42,7 @@ char *my_strcpy(char *dst,const char *src)
 	assert(dst != NULL);
 	assert(src != NULL);
 	char *ret = dst;
-	while((* dst++ = * src++) != '\0') 
+	while((*dst++ = *src++) != '\0') 
 		;
 	return ret;
 }
