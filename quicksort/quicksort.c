@@ -1,11 +1,23 @@
+/******************************************************************************
+*  author: yanenquan
+*  version: 1.0
+*  description: 快速排序
+*  date: 2014-04-18
+*  other: 无
+******************************************************************************/
+
 #include <stdio.h>
 
 void quicksort (int left, int right, int a[])
 {
 	if(left>=right)
-		return ;
+	{
+		return;
+	}
+	
 	int i=left, j=right;
 	int key=a[i];
+	
 	while (i<j)
 	{
 		while (i<j && a[j]>=key)
@@ -15,6 +27,7 @@ void quicksort (int left, int right, int a[])
 			i++;
 		a[j] = a[i];
 	}
+	
 	a[i] = key;
 	quicksort(left, i-1, a);
 	quicksort(i+1, right, a);
