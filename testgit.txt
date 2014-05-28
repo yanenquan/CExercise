@@ -1,3 +1,0 @@
-nihao github nihao
-nihao ccccccccc
-code c++
